@@ -1,0 +1,13 @@
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 128007537d04d90fcbac862274b5b2baa6ae3593
+  keep_history: true
+  on:
+    branch: master
+install:
+  - npm install
+cache:
+  directories:
+    - "node_modules"
+
