@@ -1,9 +1,11 @@
 language: node_js
 node_js:
   - "stable"
-cache: npm
-script:
-  - npm ci
+#cache: npm
+cache:
+  bundler: true
+#script:
+#  - npm ci
 deploy:
   provider: pages
   skip_cleanup: true
