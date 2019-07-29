@@ -1,13 +1,16 @@
 language: node_js
 node_js:
-  - "7"
-cache: npm
-before_install:
-  - npm i -g npm@version-number
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm install
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: 128007537d04d90fcbac862274b5b2baa6ae3593
+  local_dir: build
   keep_history: true
   on:
     branch: master
