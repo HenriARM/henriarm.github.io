@@ -7,8 +7,9 @@ cache:
 #  directories:
 #  - node_modules
 #  - $HOME/.npm
-#script:
+script:
 #  - npm ci
+  - npm install
 deploy:
   provider: pages
   skip_cleanup: true
